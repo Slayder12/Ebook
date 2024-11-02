@@ -19,7 +19,6 @@ class MainActivity : AppCompatActivity() {
         downloadBTN = findViewById(R.id.downloadBTN)
 
         downloadBTN.setOnClickListener {
-            textTV.text = ""
             val book = loadBook(Database().text)
             for (line in book){
                 textTV.append("$line ")
